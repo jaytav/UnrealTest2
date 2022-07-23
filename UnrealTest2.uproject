@@ -7,7 +7,10 @@
 		{
 			"Name": "UnrealTest2",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
@@ -20,12 +23,17 @@
 		},
 		{
 			"Name": "Bridge",
-			"Enabled": true,
+			"Enabled": false,
 			"SupportedTargetPlatforms": [
 				"Win64",
 				"Mac",
 				"Linux"
 			]
+		},
+		{
+			"Name": "RestartEditor",
+			"Enabled": false,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/a00eb1e478ae4a8fb655aa22f9125b07"
 		}
 	]
 }
